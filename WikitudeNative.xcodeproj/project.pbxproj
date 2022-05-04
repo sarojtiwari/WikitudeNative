@@ -13,7 +13,37 @@
 		B87B6F5228222A3600802276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87B6F5028222A3600802276 /* Main.storyboard */; };
 		B87B6F5428222A3700802276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87B6F5328222A3700802276 /* Assets.xcassets */; };
 		B87B6F5728222A3700802276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87B6F5528222A3700802276 /* LaunchScreen.storyboard */; };
+		B87B6F6028222AF800802276 /* WikitudeNativeSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87B6F5E28222ADB00802276 /* WikitudeNativeSDK.xcframework */; };
+		B87B6F6128222AF800802276 /* WikitudeNativeSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B87B6F5E28222ADB00802276 /* WikitudeNativeSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B87B6F7128222CA700802276 /* ExternalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6628222CA700802276 /* ExternalRenderer.swift */; };
+		B87B6F7228222CA700802276 /* ExternalMetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6728222CA700802276 /* ExternalMetalRenderer.swift */; };
+		B87B6F7328222CA700802276 /* StrokedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6928222CA700802276 /* StrokedRectangle.swift */; };
+		B87B6F7428222CA700802276 /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B87B6F6A28222CA700802276 /* FragmentShader.glsl */; };
+		B87B6F7528222CA700802276 /* OccluderCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6B28222CA700802276 /* OccluderCube.swift */; };
+		B87B6F7628222CA700802276 /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B87B6F6C28222CA700802276 /* VertexShader.glsl */; };
+		B87B6F7728222CA700802276 /* StrokedRectangleMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6D28222CA700802276 /* StrokedRectangleMetal.swift */; };
+		B87B6F7828222CA700802276 /* StrokedCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6E28222CA700802276 /* StrokedCube.swift */; };
+		B87B6F7928222CA700802276 /* CubeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F6F28222CA700802276 /* CubeBase.swift */; };
+		B87B6F7A28222CA700802276 /* FragmentShaderOccluder.glsl in Resources */ = {isa = PBXBuildFile; fileRef = B87B6F7028222CA700802276 /* FragmentShaderOccluder.glsl */; };
+		B87B6F7C28222D7C00802276 /* WikitudeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F7B28222D7C00802276 /* WikitudeViewController.swift */; };
+		B87B6F8128223E4A00802276 /* WTTargetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F7E28223E4A00802276 /* WTTargetImageView.swift */; };
+		B87B6F8228223E4A00802276 /* ExternalEAGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F7F28223E4A00802276 /* ExternalEAGLView.swift */; };
+		B87B6F8328223E4A00802276 /* ExternalMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87B6F8028223E4A00802276 /* ExternalMetalView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B87B6F6228222AF800802276 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B87B6F6128222AF800802276 /* WikitudeNativeSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B87B6F4728222A3600802276 /* WikitudeNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikitudeNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +54,22 @@
 		B87B6F5328222A3700802276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B87B6F5628222A3700802276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B87B6F5828222A3700802276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87B6F5E28222ADB00802276 /* WikitudeNativeSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WikitudeNativeSDK.xcframework; sourceTree = "<group>"; };
+		B87B6F6328222C8E00802276 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		B87B6F6628222CA700802276 /* ExternalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalRenderer.swift; sourceTree = "<group>"; };
+		B87B6F6728222CA700802276 /* ExternalMetalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalMetalRenderer.swift; sourceTree = "<group>"; };
+		B87B6F6928222CA700802276 /* StrokedRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokedRectangle.swift; sourceTree = "<group>"; };
+		B87B6F6A28222CA700802276 /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		B87B6F6B28222CA700802276 /* OccluderCube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccluderCube.swift; sourceTree = "<group>"; };
+		B87B6F6C28222CA700802276 /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		B87B6F6D28222CA700802276 /* StrokedRectangleMetal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokedRectangleMetal.swift; sourceTree = "<group>"; };
+		B87B6F6E28222CA700802276 /* StrokedCube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokedCube.swift; sourceTree = "<group>"; };
+		B87B6F6F28222CA700802276 /* CubeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeBase.swift; sourceTree = "<group>"; };
+		B87B6F7028222CA700802276 /* FragmentShaderOccluder.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShaderOccluder.glsl; sourceTree = "<group>"; };
+		B87B6F7B28222D7C00802276 /* WikitudeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikitudeViewController.swift; sourceTree = "<group>"; };
+		B87B6F7E28223E4A00802276 /* WTTargetImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTargetImageView.swift; sourceTree = "<group>"; };
+		B87B6F7F28223E4A00802276 /* ExternalEAGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalEAGLView.swift; sourceTree = "<group>"; };
+		B87B6F8028223E4A00802276 /* ExternalMetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalMetalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87B6F6028222AF800802276 /* WikitudeNativeSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +103,9 @@
 		B87B6F4928222A3600802276 /* WikitudeNative */ = {
 			isa = PBXGroup;
 			children = (
+				B87B6F7D28223E4A00802276 /* Views */,
+				B87B6F6428222CA700802276 /* CoreServices */,
+				B87B6F5E28222ADB00802276 /* WikitudeNativeSDK.xcframework */,
 				B87B6F4A28222A3600802276 /* AppDelegate.swift */,
 				B87B6F4C28222A3600802276 /* SceneDelegate.swift */,
 				B87B6F4E28222A3600802276 /* ViewController.swift */,
@@ -63,8 +113,53 @@
 				B87B6F5328222A3700802276 /* Assets.xcassets */,
 				B87B6F5528222A3700802276 /* LaunchScreen.storyboard */,
 				B87B6F5828222A3700802276 /* Info.plist */,
+				B87B6F6328222C8E00802276 /* BridgingHeader.h */,
+				B87B6F7B28222D7C00802276 /* WikitudeViewController.swift */,
 			);
 			path = WikitudeNative;
+			sourceTree = "<group>";
+		};
+		B87B6F6428222CA700802276 /* CoreServices */ = {
+			isa = PBXGroup;
+			children = (
+				B87B6F6528222CA700802276 /* Renderer */,
+				B87B6F6828222CA700802276 /* Renderables */,
+			);
+			path = CoreServices;
+			sourceTree = "<group>";
+		};
+		B87B6F6528222CA700802276 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				B87B6F6628222CA700802276 /* ExternalRenderer.swift */,
+				B87B6F6728222CA700802276 /* ExternalMetalRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		B87B6F6828222CA700802276 /* Renderables */ = {
+			isa = PBXGroup;
+			children = (
+				B87B6F6928222CA700802276 /* StrokedRectangle.swift */,
+				B87B6F6A28222CA700802276 /* FragmentShader.glsl */,
+				B87B6F6B28222CA700802276 /* OccluderCube.swift */,
+				B87B6F6C28222CA700802276 /* VertexShader.glsl */,
+				B87B6F6D28222CA700802276 /* StrokedRectangleMetal.swift */,
+				B87B6F6E28222CA700802276 /* StrokedCube.swift */,
+				B87B6F6F28222CA700802276 /* CubeBase.swift */,
+				B87B6F7028222CA700802276 /* FragmentShaderOccluder.glsl */,
+			);
+			path = Renderables;
+			sourceTree = "<group>";
+		};
+		B87B6F7D28223E4A00802276 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B87B6F7E28223E4A00802276 /* WTTargetImageView.swift */,
+				B87B6F7F28223E4A00802276 /* ExternalEAGLView.swift */,
+				B87B6F8028223E4A00802276 /* ExternalMetalView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +172,7 @@
 				B87B6F4328222A3600802276 /* Sources */,
 				B87B6F4428222A3600802276 /* Frameworks */,
 				B87B6F4528222A3600802276 /* Resources */,
+				B87B6F6228222AF800802276 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,7 +223,10 @@
 			files = (
 				B87B6F5728222A3700802276 /* LaunchScreen.storyboard in Resources */,
 				B87B6F5428222A3700802276 /* Assets.xcassets in Resources */,
+				B87B6F7628222CA700802276 /* VertexShader.glsl in Resources */,
+				B87B6F7428222CA700802276 /* FragmentShader.glsl in Resources */,
 				B87B6F5228222A3600802276 /* Main.storyboard in Resources */,
+				B87B6F7A28222CA700802276 /* FragmentShaderOccluder.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +237,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87B6F7528222CA700802276 /* OccluderCube.swift in Sources */,
+				B87B6F7928222CA700802276 /* CubeBase.swift in Sources */,
+				B87B6F7228222CA700802276 /* ExternalMetalRenderer.swift in Sources */,
+				B87B6F8328223E4A00802276 /* ExternalMetalView.swift in Sources */,
+				B87B6F7C28222D7C00802276 /* WikitudeViewController.swift in Sources */,
+				B87B6F7728222CA700802276 /* StrokedRectangleMetal.swift in Sources */,
 				B87B6F4F28222A3600802276 /* ViewController.swift in Sources */,
 				B87B6F4B28222A3600802276 /* AppDelegate.swift in Sources */,
+				B87B6F8228223E4A00802276 /* ExternalEAGLView.swift in Sources */,
 				B87B6F4D28222A3600802276 /* SceneDelegate.swift in Sources */,
+				B87B6F7828222CA700802276 /* StrokedCube.swift in Sources */,
+				B87B6F7328222CA700802276 /* StrokedRectangle.swift in Sources */,
+				B87B6F8128223E4A00802276 /* WTTargetImageView.swift in Sources */,
+				B87B6F7128222CA700802276 /* ExternalRenderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XTJ3JFW89G;
+				DEVELOPMENT_TEAM = 6W4FA4QB7N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WikitudeNative/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +428,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XTJ3JFW89G;
+				DEVELOPMENT_TEAM = 6W4FA4QB7N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WikitudeNative/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,6 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
